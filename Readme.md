@@ -41,11 +41,11 @@ ademas de agregar un DNI con letra incorrecta para asegurarme de que no dé sime
 
 ## Una vez hechos los Test
 #### calcularLetraDNI
-Despues de realizar los **tests** saltan dos errores, la letras **Q** devuelve que deberia se la **S**
-y al reves. Lo mas probable es que al crear el método cambiaran de lugar ambas letras por lo que con cambiar las letras entre si deberia bastar
+Despues de realizar los **tests** saltan dos errores, la letras **Q** devuelve que deberia ser la **S**
+y al reves. Lo más probable es que al crear el método cambiaran de lugar ambas letras por lo que con cambiar las letras entre sí deberia bastar
 
 #### comprobarDNI
-Despues de realizar los **tests** saltan dos errores, exactamente en los mismos momentos donde salta `calcularLetraDNI` por lo que lo más probable es que sea un error arrrastrado de dicho método y que con arreglar ese método tambien se arregle este.
+Despues de realizar los **tests** saltan dos errores, exactamente en los mismos casos donde salta `calcularLetraDNI` por lo que lo más probable es que sea un error arrrastrado de dicho método y que con arreglar ese método tambien se arregle este.
 
 ### Caso de no comprobar longitud del String
 Si no se asume que el DNI tendra los 8 numeros los **tests** deberian añadir casos donde el DNI tenga una **longitud menor a 8** y un caso para **longitudes superiores a 8**, en ambos casos esperariamos respuestas de los **métodos** que indiquen que algo no esta bien  
