@@ -31,7 +31,7 @@ Para ello usaremos la herramienta para generarlo que nos deja el propio IDEA
 
 ### Test de calcularLetraDni
 Para testear esta clase simplemente probé DNI's desde 00000001 hasta el 00000023 que son las 23 letras distintas que puede tener un DNI.
-Para saber a que numero le corresponde cada letra se puede buscar en google facilmente.
+Para saber que letra le corresponde a cada número se puede buscar en google fácilmente.
 
 Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@ParameterizedTest` 
 
