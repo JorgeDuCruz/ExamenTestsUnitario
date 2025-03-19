@@ -28,3 +28,7 @@ Para ello usaremos la herramienta para generarlo que nos deja el propio IDEA
 * Presionamos la opcion `generate test` dentro de `generate`
 * Seleccionamos JUnit5 y presionamos el boton `Fix`
 * Por ultimo seleccionamos los metodos que queremos testear y presionamos el boton de OK
+
+### Test de calcularLetraDni
+Para testear esta clase simplemente probe dnis desde 00000000 hasta el 00000022 que son los 23 restos distintos que puede tener un DNI para saber su letra.
+Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@ParameterizedTest` 
