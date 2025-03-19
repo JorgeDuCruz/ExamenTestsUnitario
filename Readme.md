@@ -22,3 +22,9 @@ Para esto seguiremos los siguientes pasos
 * Creamos un directorio al nivel del directorio src y lo llamamos test
 * Dentro del IDEA clic derecho en el directorio `test` y `Mark Directory as Test source Root`
 
+### Una vez creada la carpeta `test` crearemos las clases `test`
+Para ello usaremos la herramienta para generarlo que nos deja el propio IDEA
+* Clic derecho en la clase que queramos testear
+* Presionamos la opcion `generate test` dentro de `generate`
+* Seleccionamos JUnit5 y presionamos el boton `Fix`
+* Por ultimo seleccionamos los metodos que queremos testear y presionamos el boton de OK
