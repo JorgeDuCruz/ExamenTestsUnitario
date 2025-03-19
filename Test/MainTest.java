@@ -8,7 +8,6 @@ class MainTest {
 
     @ParameterizedTest
     @CsvSource({
-            "00000000,T,true",
             "00000001,R,true",
             "00000002,W,true",
             "00000003,A,true",
@@ -31,7 +30,8 @@ class MainTest {
             "00000020,C,true",
             "00000021,K,true",
             "00000022,E,true",
-            "00000000,E,false",
+            "00000023,T,true",
+            "00000015,E,false",
 
     })
     void comprobarDNI(String dni, char letra,boolean resultadoEsperado) {
@@ -40,7 +40,6 @@ class MainTest {
 
     @ParameterizedTest(name="{0} deberia tener la letra {1}")
     @CsvSource({
-            "00000000,T",
             "00000001,R",
             "00000002,W",
             "00000003,A",
@@ -63,6 +62,7 @@ class MainTest {
             "00000020,C",
             "00000021,K",
             "00000022,E",
+            "00000023,T",
     })
     void calcularLetraDNI(String dni, char resultadoEsperado) {
         assertEquals(resultadoEsperado,Main.calcularLetraDNI(dni));
