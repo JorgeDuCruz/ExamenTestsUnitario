@@ -39,7 +39,7 @@ Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@Paramet
 Para testear esta clase simplemente use los mismos datos que use para testear la clase anterior pero añadiendo el valor true, ya que todos deberian ser correctos, 
 ademas de agregar un dni con letra incorrecta para asegurarme de que no dé simepre true.
 
-### Una vez hechos los Test
+## Una vez hechos los Test
 #### calcularLetraDNI
 Despues de realizar los **tests** saltan dos errores, la letras **Q** devuelve que deberia se la **S**
 y al reves. Lo mas probable es que al crear el método cambiaran de lugar ambas letras por lo que con cambiar las letras entre si deberia bastar
