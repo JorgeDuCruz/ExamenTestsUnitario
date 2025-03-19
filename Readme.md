@@ -36,4 +36,14 @@ Para saber a que numero le corresponde cada letra se puede buscar en google faci
 Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@ParameterizedTest` 
 
 ### Test de comprobarDNI
-Para testear esta clase simplemente use los mismos datos que use para testear la clase anterior pero añadiendo el valor true, ya que todos deberian ser correctos, ademas de agregar un dni con letra incorrecta para asegurarme de que no de simepre true
+Para testear esta clase simplemente use los mismos datos que use para testear la clase anterior pero añadiendo el valor true, ya que todos deberian ser correctos, 
+ademas de agregar un dni con letra incorrecta para asegurarme de que no de simepre true.
+
+### Una vez hechos los Test
+#### calcularLetraDNI
+Despues de realizar los **tests** saltan dos errores, la letras **Q** devuelve que deberia se la **S**
+y al reves. Lo mas probable es que al crear el metodo cambiaran de lugar ambas letras por lo que con cambiar las letras entre si deberia bastar
+
+#### comprobarDNI
+Despues de realizar los **tests** saltan dos erroress, exactamente en los mismos mometos donde salta `calcularLetraDNI` por lo que lo más probale es que sea un error arrrastrado de dicho metodo y que con arreglar ese metodo tambien se arregle este.
+
