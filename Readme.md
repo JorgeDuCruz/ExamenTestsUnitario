@@ -20,17 +20,17 @@ Formato del `Readme` *1 punto*
 ### Primero debemos crear la carpeta donde guardaremos los tests
 Para esto seguiremos los siguientes pasos
 * Creamos un directorio al nivel del directorio src y lo llamamos test
-* Dentro del IDEA clic derecho en el directorio `test` y `Mark Directory as Test source Root`
+* Dentro del IDEA clic derecho en el directorio `test` y seleccionamos `Mark Directory as Test source Root`
 
 ### Una vez creada la carpeta `test` crearemos las clases `test`
 Para ello usaremos la herramienta para generarlo que nos deja el propio IDEA
-* Clic derecho en la clase que queramos testear
+* Clic derecho una vez dentro de la clase que queramos testear
 * Presionamos la opcion `generate test` dentro de `generate`
-* Seleccionamos JUnit5 y presionamos el boton `Fix`
+* Seleccionamos JUnit5 y ,en caso de aparecer, presionamos el botón `Fix`
 * Por ultimo seleccionamos los métodos que queremos testear y presionamos el botón de OK
 
 ### Test de calcularLetraDni
-Para testear esta clase simplemente probe dnis desde 00000001 hasta el 00000023 que son los 23 restos distintos que puede tener un DNI para saber su letra.
+Para testear esta clase simplemente probé DNI's desde 00000001 hasta el 00000023 que son las 23 letras distintas que puede tener un DNI.
 Para saber a que numero le corresponde cada letra se puede buscar en google facilmente.
 
 Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@ParameterizedTest` 
