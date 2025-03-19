@@ -29,15 +29,15 @@ Para ello usaremos la herramienta para generarlo que nos deja el propio IDEA
 * Seleccionamos JUnit5 y ,en caso de aparecer, presionamos el botón `Fix`
 * Por ultimo seleccionamos los métodos que queremos testear y presionamos el botón de OK
 
-### Test de calcularLetraDni
-Para testear esta clase simplemente probé DNI's desde 00000001 hasta el 00000023 que son las 23 letras distintas que puede tener un DNI.
+### Test de calcularLetraDNI
+Para testear este método simplemente probé DNI's desde 00000001 hasta el 00000023 que son las 23 letras distintas que puede tener un DNI.
 Para saber que letra le corresponde a cada número se puede buscar en google fácilmente.
 
 Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@ParameterizedTest` 
 
 ### Test de comprobarDNI
-Para testear esta clase simplemente use los mismos datos que use para testear la clase anterior pero añadiendo el valor true, ya que todos deberian ser correctos, 
-ademas de agregar un dni con letra incorrecta para asegurarme de que no dé simepre true.
+Para testear este método simplemente usé los mismos datos que ya usé para testear el método anterior pero añadiendo el valor true, ya que todos deberian ser correctos, 
+ademas de agregar un DNI con letra incorrecta para asegurarme de que no dé simepre true.
 
 ## Una vez hechos los Test
 #### calcularLetraDNI
