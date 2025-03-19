@@ -15,3 +15,10 @@ Entrega tu repositorio con el código y los test. Además un `Readme` explicando
 Formato del `Readme` *1 punto*
 
 ---
+
+## Pasos para crear los tests
+### Primero debemos crear la carpeta donde guardaremos los tests
+Para esto seguiremos los siguientes pasos
+* Creamos un directorio al nivel del directorio src y lo llamamos test
+* Dentro del IDEA clic derecho en el directorio `test` y `Mark Directory as Test source Root`
+
