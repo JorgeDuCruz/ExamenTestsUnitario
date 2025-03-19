@@ -27,23 +27,25 @@ Para ello usaremos la herramienta para generarlo que nos deja el propio IDEA
 * Clic derecho en la clase que queramos testear
 * Presionamos la opcion `generate test` dentro de `generate`
 * Seleccionamos JUnit5 y presionamos el boton `Fix`
-* Por ultimo seleccionamos los metodos que queremos testear y presionamos el boton de OK
+* Por ultimo seleccionamos los métodos que queremos testear y presionamos el botón de OK
 
 ### Test de calcularLetraDni
-Para testear esta clase simplemente probe dnis desde 00000000 hasta el 00000022 que son los 23 restos distintos que puede tener un DNI para saber su letra.
+Para testear esta clase simplemente probe dnis desde 00000001 hasta el 00000023 que son los 23 restos distintos que puede tener un DNI para saber su letra.
 Para saber a que numero le corresponde cada letra se puede buscar en google facilmente.
 
 Obviamente dado que son muchos casos lo preferible es hacerlo mediante `@ParameterizedTest` 
 
 ### Test de comprobarDNI
 Para testear esta clase simplemente use los mismos datos que use para testear la clase anterior pero añadiendo el valor true, ya que todos deberian ser correctos, 
-ademas de agregar un dni con letra incorrecta para asegurarme de que no de simepre true.
+ademas de agregar un dni con letra incorrecta para asegurarme de que no dé simepre true.
 
 ### Una vez hechos los Test
 #### calcularLetraDNI
 Despues de realizar los **tests** saltan dos errores, la letras **Q** devuelve que deberia se la **S**
-y al reves. Lo mas probable es que al crear el metodo cambiaran de lugar ambas letras por lo que con cambiar las letras entre si deberia bastar
+y al reves. Lo mas probable es que al crear el método cambiaran de lugar ambas letras por lo que con cambiar las letras entre si deberia bastar
 
 #### comprobarDNI
-Despues de realizar los **tests** saltan dos erroress, exactamente en los mismos mometos donde salta `calcularLetraDNI` por lo que lo más probale es que sea un error arrrastrado de dicho metodo y que con arreglar ese metodo tambien se arregle este.
+Despues de realizar los **tests** saltan dos errores, exactamente en los mismos momentos donde salta `calcularLetraDNI` por lo que lo más probable es que sea un error arrrastrado de dicho método y que con arreglar ese método tambien se arregle este.
 
+### Caso de no comprobar longitud del String
+Si no se asume que el DNI tendra los 8 numeros los **tests** deberian añadir casos donde el DNI tenga una **longitud menor a 8** y un caso para **longitudes superiores a 8**, en ambos casos esperariamos respuestas de los **métodos** que indiquen que algo no esta bien  
